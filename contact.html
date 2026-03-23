@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Guys Hill Landscaping Inc.</title>
+  <meta name="description" content="Contact Guys Hill Landscaping Inc. for a free quote on landscaping services in Calgary, Alberta.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">Guys Hill <span>Landscaping</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Let's discuss your landscaping project</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="reveal">
+          <div class="contact-info-card">
+            <h3>Get in Touch</h3>
+            <div class="contact-info-item">
+              <span class="icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+14032179112" style="color:rgba(255,255,255,.9)">+1 403-217-9112</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <p>Calgary, Alberta, Canada</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p>info@guyshilllandscaping.com</p>
+              </div>
+            </div>
+            <div class="contact-hours">
+              <h4>Business Hours</h4>
+              <div class="hours-row"><span>Monday – Friday</span><span>7:00 AM – 6:00 PM</span></div>
+              <div class="hours-row"><span>Saturday</span><span>8:00 AM – 4:00 PM</span></div>
+              <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="reveal">
+          <div class="contact-form" id="contactFormWrapper">
+            <h2 style="margin-bottom:4px">Request a Quote</h2>
+            <p style="color:var(--text-light);font-size:.9rem;margin-bottom:28px">Fill out the form below and we'll get back to you within 24 hours.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                  <p class="error-msg">Please enter your name</p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                  <p class="error-msg">Please enter a valid email</p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+1 403-000-0000">
+                </div>
+                <div class="form-group">
+                  <label for="service">Service Interested In</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option>Landscape Design</option>
+                    <option>Lawn Maintenance</option>
+                    <option>Garden Installation</option>
+                    <option>Tree &amp; Shrub Planting</option>
+                    <option>Hardscaping</option>
+                    <option>Irrigation Systems</option>
+                    <option>Landscape Lighting</option>
+                    <option>Seasonal Cleanup</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="location">Project Location</label>
+                  <input type="text" id="location" name="location" placeholder="Calgary area">
+                </div>
+                <div class="form-group">
+                  <label for="budget">Budget Range</label>
+                  <select id="budget" name="budget">
+                    <option value="">Select budget range</option>
+                    <option>Under $5,000</option>
+                    <option>$5,000 – $10,000</option>
+                    <option>$10,000 – $25,000</option>
+                    <option>$25,000 – $50,000</option>
+                    <option>$50,000+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your project..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Submit Request</button>
+            </form>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            <h3>✓ Thank You!</h3>
+            <p style="color:var(--text-light)">Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+            <button class="btn btn-primary" style="margin-top:20px" onclick="document.getElementById('formSuccess').classList.remove('show');document.getElementById('contactForm').reset();document.getElementById('contactForm').style.display='block'">Send Another Message</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-section reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320936.3843077064!2d-114.31504079643557!3d51.02726829688498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1710000000000!5m2!1sen!2sca"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Calgary location map"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Guys Hill Landscaping</h4><p>Professional landscaping and outdoor design company serving Calgary, Alberta.</p></div>
+        <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h4>Contact Info</h4><ul><li>📞 <a href="tel:+14032179112">+1 403-217-9112</a></li><li>📍 Calgary, Alberta, Canada</li><li>✉️ info@guyshilllandscaping.com</li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Guys Hill Landscaping Inc. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

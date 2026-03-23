@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Guys Hill Landscaping Inc.</title>
+  <meta name="description" content="Browse our portfolio of completed landscaping projects across Calgary, Alberta.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">Guys Hill <span>Landscaping</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Portfolio</h1>
+      <p>Showcasing our finest landscaping projects across Calgary</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-buttons reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="garden">Garden Design</button>
+        <button class="filter-btn" data-filter="hardscaping">Hardscaping</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <div class="portfolio-card reveal" data-category="hardscaping">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Stone patio project">
+          <div class="portfolio-card-body">
+            <span>Hardscaping · SW Calgary</span>
+            <h3>Stone Patio &amp; Garden Retreat</h3>
+            <p>A complete backyard transformation featuring natural stone patio and lush garden beds.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1584479898061-15742e14f50d?w=600&q=80" alt="Corporate landscape">
+          <div class="portfolio-card-body">
+            <span>Commercial · Downtown Calgary</span>
+            <h3>Corporate Office Landscape</h3>
+            <p>Modern, low-maintenance landscaping for a downtown corporate headquarters.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-category="hardscaping">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Walkway project">
+          <div class="portfolio-card-body">
+            <span>Hardscaping · NW Calgary</span>
+            <h3>Curved Walkway &amp; Retaining Walls</h3>
+            <p>Elegant curved walkways with integrated retaining walls and accent lighting.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1598902108854-d1446614850e?w=600&q=80" alt="Outdoor living space">
+          <div class="portfolio-card-body">
+            <span>Residential · Tuscany</span>
+            <h3>Outdoor Living &amp; Fire Pit</h3>
+            <p>A stunning outdoor entertainment area with custom fire pit and seating.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-category="garden">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80" alt="Front yard garden">
+          <div class="portfolio-card-body">
+            <span>Garden Design · Arbour Lake</span>
+            <h3>Front Yard Curb Appeal</h3>
+            <p>Complete front yard redesign with native plantings and decorative rock.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-category="garden">
+          <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" alt="Japanese garden">
+          <div class="portfolio-card-body">
+            <span>Garden Design · Elbow Park</span>
+            <h3>Japanese-Inspired Garden</h3>
+            <p>A tranquil Japanese-inspired garden with water features and ornamental grasses.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&q=80" alt="Estate garden">
+          <div class="portfolio-card-body">
+            <span>Residential · Aspen Woods</span>
+            <h3>Estate Garden Design</h3>
+            <p>Expansive estate landscaping with formal gardens and natural stone accents.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1563299796-17596ed6b017?w=600&q=80" alt="Park renovation">
+          <div class="portfolio-card-body">
+            <span>Commercial · Cochrane, AB</span>
+            <h3>Community Park Renovation</h3>
+            <p>A full park renovation including playground area, walking paths, and native plantings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container reveal">
+      <h2>Have a Project in Mind?</h2>
+      <p>Let's discuss how we can bring your vision to life.</p>
+      <a href="contact.html" class="btn btn-accent">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Guys Hill Landscaping</h4><p>Professional landscaping and outdoor design company serving Calgary, Alberta.</p></div>
+        <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h4>Contact Info</h4><ul><li>📞 <a href="tel:+14032179112">+1 403-217-9112</a></li><li>📍 Calgary, Alberta, Canada</li><li>✉️ info@guyshilllandscaping.com</li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Guys Hill Landscaping Inc. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
